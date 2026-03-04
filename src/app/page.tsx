@@ -138,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      <MarqueeStrip text="CURATED BUILDERS ★ 150-200 SELECTED PARTICIPANTS ★ APPLICATION REQUIRED" />
+      <MarqueeStrip text="CURATED BUILDERS ★ 200 SELECTED PARTICIPANTS ★ APPLICATION REQUIRED" />
 
       {/* ═══════════════ BUILDER PROFILE ═══════════════ */}
       <section id="builders" className="py-16 md:py-24 bg-[var(--bg-secondary)]">
@@ -183,7 +183,7 @@ export default function Home() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-8 border-t-2 border-dashed border-[var(--border)]">
             {[
-              { stat: "150-200", label: "Curated Builders" },
+              { stat: "200", label: "Curated Builders" },
               { stat: "5", label: "Frontier Tracks" },
               { stat: "16", label: "Floors at Frontier Tower" },
               { stat: "2", label: "Days of Intense Building" },
@@ -344,7 +344,7 @@ export default function Home() {
         </div>
       </section>
 
-      <MarqueeStrip text="BECOME A SPONSOR ★ LIMITED SLOTS AVAILABLE ★ NNEOMA@PLRS.XYZ" />
+      <MarqueeStrip text="BECOME A SPONSOR ★ LIMITED SLOTS AVAILABLE ★ FRONTIER TOWER SF" />
 
       {/* ═══════════════ CTA / CONTACT ═══════════════ */}
       <section id="contact" className="py-24 md:py-32 bg-[var(--bg-secondary)] relative overflow-hidden text-center">
@@ -371,18 +371,37 @@ export default function Home() {
 
       {/* ═══════════════ FOOTER ═══════════════ */}
       <footer className="py-6 border-t-2 border-[var(--border)] bg-[var(--bg-card)]">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <span className="font-[family-name:var(--font-display)] text-[0.35rem] tracking-[0.2em] uppercase text-[var(--text-muted)]">
-            Intelligence at the Frontier - SF 2026
-          </span>
-          <div className="visitor-badge">
-            <span>Visitors:</span>
-            <span className="count">001337</span>
+        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-5">
+          {/* Logo row */}
+          <div className="flex items-center gap-4 md:gap-6">
+            <a href="https://protocol.ai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+              <img
+                src="/logos/protocol-labs.svg"
+                alt="Protocol Labs"
+                className="h-[34px] w-auto"
+              />
+              <span className="font-[family-name:var(--font-display)] text-[0.35rem] tracking-[0.15em] uppercase text-[var(--text-muted)]">Protocol Labs</span>
+            </a>
+            <span className="font-[family-name:var(--font-display)] text-[0.5rem] text-[var(--accent)]">×</span>
+            <a href="https://fundingthecommons.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+              <img
+                src="/logos/funding-the-commons.png"
+                alt="Funding the Commons"
+                className="h-5 md:h-6 w-auto"
+              />
+              <span className="font-[family-name:var(--font-display)] text-[0.35rem] tracking-[0.15em] uppercase text-[var(--text-muted)]">Funding the Commons</span>
+            </a>
           </div>
-          <div className="flex items-center gap-3 font-[family-name:var(--font-display)] text-[0.35rem] tracking-[0.15em] uppercase text-[var(--text-muted)]">
-            <span>Protocol Labs</span>
-            <span className="text-[var(--accent)]">x</span>
-            <span>Funding the Commons</span>
+
+          {/* Bottom row */}
+          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-3">
+            <span className="font-[family-name:var(--font-display)] text-[0.35rem] tracking-[0.2em] uppercase text-[var(--text-muted)]">
+              Intelligence at the Frontier - SF 2026
+            </span>
+            <div className="visitor-badge">
+              <span>Visitors:</span>
+              <span className="count">001337</span>
+            </div>
           </div>
         </div>
       </footer>
