@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Press_Start_2P, Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const pixel = Press_Start_2P({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: "400",
+  variable: "--font-pixel",
   display: "swap",
 });
 
-const mono = JetBrains_Mono({
+const mono = Space_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  weight: ["400", "700"],
+  variable: "--font-mono-body",
   display: "swap",
 });
 
@@ -18,12 +20,6 @@ export const metadata: Metadata = {
   title: "Intelligence at the Frontier — Sponsor Deck",
   description:
     "A curated builder sprint + demo day at Frontier Tower, San Francisco. Hosted by Funding the Commons & Protocol Labs. March 14–15, 2026.",
-  openGraph: {
-    title: "Intelligence at the Frontier — Sponsor Deck",
-    description:
-      "A curated builder sprint + demo day at Frontier Tower, San Francisco.",
-    type: "website",
-  },
 };
 
 export default function RootLayout({
@@ -32,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
-      <body className="antialiased">{children}</body>
+    <html lang="en" className={`${pixel.variable} ${mono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
