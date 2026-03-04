@@ -442,7 +442,7 @@ export default function Home() {
                 your position.
               </p>
 
-              <a href="mailto:sponsor@fundingthecommons.io" className="cta-button mx-auto">
+              <a href="mailto:nneoma@plrs.xyz" className="cta-button mx-auto">
                 <span>Become a Sponsor</span>
                 <svg
                   width="16"
@@ -462,7 +462,7 @@ export default function Home() {
               </a>
 
               <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8 font-mono text-[0.65rem] tracking-[0.15em] uppercase text-[var(--text-muted)]">
-                <span>sponsor@fundingthecommons.io</span>
+                <span>nneoma@plrs.xyz</span>
                 <span className="hidden md:block text-[var(--border)]">|</span>
                 <span>Funding the Commons × Protocol Labs</span>
               </div>

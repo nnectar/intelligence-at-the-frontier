@@ -70,7 +70,7 @@ export default function Navigation() {
         </div>
 
         <a
-          href="mailto:sponsor@fundingthecommons.io"
+          href="mailto:nneoma@plrs.xyz"
           className="font-mono text-[0.7rem] tracking-[0.15em] uppercase text-[var(--accent)] hover:text-[var(--text-primary)] transition-colors"
         >
           Become a Sponsor →
