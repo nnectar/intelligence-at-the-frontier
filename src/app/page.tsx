@@ -66,7 +66,7 @@ export default function Home() {
         <HeroCanvas />
 
         {/* Hero content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 md:pb-24 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-24 md:pb-32 w-full">
           <div className="mb-4 font-mono text-[0.65rem] tracking-[0.2em] uppercase text-[var(--text-muted)] flex items-center gap-3">
             <span>Protocol Labs</span>
             <span className="text-[var(--accent)]">&amp;</span>
@@ -432,15 +432,11 @@ export default function Home() {
           <ScrollReveal>
             <div className="text-center">
               <span className="section-label mb-4 block">// Limited Slots Available</span>
-              <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-extralight leading-[0.95] tracking-[-0.03em] text-[var(--text-primary)] mb-6">
-                Ready to build
+              <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-extralight leading-[0.95] tracking-[-0.03em] text-[var(--text-primary)] mb-16">
+                Ready to support builders
                 <br />
                 <strong className="text-[var(--accent)]">at the frontier?</strong>
               </h2>
-              <p className="text-[var(--text-secondary)] text-lg max-w-lg mx-auto mb-12">
-                We are opening a limited number of additional sponsor slots. Reach out to secure
-                your position.
-              </p>
 
               <a href="mailto:nneoma@plrs.xyz" className="cta-button mx-auto">
                 <span>Become a Sponsor</span>
@@ -461,9 +457,7 @@ export default function Home() {
                 </svg>
               </a>
 
-              <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8 font-mono text-[0.65rem] tracking-[0.15em] uppercase text-[var(--text-muted)]">
-                <span>nneoma@plrs.xyz</span>
-                <span className="hidden md:block text-[var(--border)]">|</span>
+              <div className="mt-20 flex flex-col md:flex-row items-center justify-center gap-8 font-mono text-[0.65rem] tracking-[0.15em] uppercase text-[var(--text-muted)]">
                 <span>Funding the Commons × Protocol Labs</span>
               </div>
             </div>
